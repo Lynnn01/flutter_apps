@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -14,15 +16,18 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        backgroundColor: Theme.of(context).colorScheme.errorContainer,
+        title: const Text("hello, my app"),
       ),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[],
+      body: Center(
+        child: const Column(
+          children: [
+            Text("data1"),
+            Text("data2"),
+            Text("data3"),
+          ],
         ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }

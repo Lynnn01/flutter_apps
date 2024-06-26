@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'jetsada tonsri'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
